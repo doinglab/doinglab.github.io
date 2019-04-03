@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FoodLens  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="FoodLens  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">FoodLens Docs</a> (93% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">FoodLens Reference</a>
+        <img id="carat" src="img/carat.png" />
+        FoodLens  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/BaseError.html">BaseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Box.html">Box</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Food.html">Food</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FoodLens.html">FoodLens</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FoodPosition.html">FoodPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NetworkService.html">NetworkService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Nutrition.html">Nutrition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PredictionResult.html">PredictionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ProcessStatus.html">ProcessStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UIService.html">UIService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/MealType.html">MealType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NutritionRetrieveMode.html">NutritionRetrieveMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ProcessReason.html">ProcessReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ProcessState.html">ProcessState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/UIServiceMode.html">UIServiceMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/RecognitionResult.html">RecognitionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/UserServiceResultHandler.html">UserServiceResultHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='foodlens' class='heading'>FoodLens</h1>
+
+<!-- [![CI Status](https://img.shields.io/travis/hyunsuk.lee@doinglab.com/FoodLens.svg?style=flat)](https://travis-ci.org/hyunsuk.lee@doinglab.com/FoodLens)
+[![Version](https://img.shields.io/cocoapods/v/FoodLens.svg?style=flat)](https://cocoapods.org/pods/FoodLens)
+[![License](https://img.shields.io/cocoapods/l/FoodLens.svg?style=flat)](https://cocoapods.org/pods/FoodLens)
+[![Platform](https://img.shields.io/cocoapods/p/FoodLens.svg?style=flat)](https://cocoapods.org/pods/FoodLens) -->
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS Ver 10.0 or higher</li>
+<li>Swift Version 4.2 or higher</li>
+</ul>
+<h2 id='example' class='heading'>Example</h2>
+
+<p><a href="SampleCode/">Sample</a></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>First, add repository using  <code>pod repo add</code></p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="n">repo</span> <span class="n">add</span> <span class="n">bitbucket</span><span class="o">-</span><span class="n">doing</span><span class="o">-</span><span class="n">lab</span><span class="o">-</span><span class="n">foodlenssdk</span><span class="o">-</span><span class="n">specs</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">bitbucket</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span><span class="n">doing</span><span class="o">-</span><span class="n">lab</span><span class="o">/</span><span class="n">foodlenssdk</span><span class="o">-</span><span class="n">specs</span><span class="p">.</span><span class="nf">git</span>
+</code></pre>
+
+<p>When credentials are needed, we have given you some information to certify, please use it.</p>
+
+<p>Next, add source clause of FoodLens into your Podfile.  </p>
+<pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://bitbucket.org/doing-lab/foodlenssdk-specs.git'</span>
+</code></pre>
+
+<p>When you use other library (Alamofire, Kingfisher etc&hellip;), you must add cocoapod source into your Podfile. </p>
+<pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://bitbucket.org/doing-lab/foodlenssdk-specs.git'</span>
+<span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
+</code></pre>
+
+<p>And add below into your Podfile</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'FoodLens'</span>
+</code></pre>
+<h2 id='using-foodlens-ui' class='heading'>Using FoodLens UI</h2>
+
+<p>You can use UI served by default</p>
+<pre class="highlight swift"><code><span class="kt">FoodLens</span><span class="o">.</span><span class="n">uiServiceMode</span> <span class="o">=</span> <span class="o">.</span><span class="n">userSelectedWithCandidates</span>
+
+<span class="k">let</span> <span class="nv">uiService</span> <span class="o">=</span> <span class="kt">FoodLens</span><span class="o">.</span><span class="nf">createUIService</span><span class="p">(</span><span class="nv">accessToken</span><span class="p">:</span> <span class="s">"31ae11f871ed4b2f89b18528f989af76"</span><span class="p">)</span> <span class="c1">//AccessToken is given to you</span>
+<span class="n">uiService</span><span class="p">?</span><span class="o">.</span><span class="nf">startUIService</span><span class="p">(</span><span class="nv">parent</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+</code></pre>
+
+<p>A completionHandler is protocol called when recognition process is completed</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">UserServiceResultHandler</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">onSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span> <span class="p">:</span> <span class="kt">RecognitionResult</span><span class="p">)</span>    <span class="c1">//called when process is succeeded</span>
+    <span class="kd">func</span> <span class="nf">onCancel</span><span class="p">()</span>                                 <span class="c1">//called when user cancels recognition</span>
+    <span class="kd">func</span> <span class="nf">onError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span> <span class="p">:</span> <span class="kt">BaseError</span><span class="p">)</span>               <span class="c1">//called when error is occurred</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>When you want to modify recognition result, you can use editing service </p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mealData</span> <span class="o">=</span> <span class="kt">PredictionResult</span><span class="p">()</span>    <span class="c1">// PredictionResult implements RecognitionResult protocol</span>
+<span class="k">let</span> <span class="nv">foodPosition</span> <span class="o">=</span> <span class="kt">FoodPosition</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">food</span> <span class="o">=</span> <span class="kt">Food</span><span class="p">()</span>
+<span class="n">food</span><span class="o">.</span><span class="n">foodName</span> <span class="o">=</span> <span class="s">"FoodName"</span>
+<span class="k">let</span> <span class="nv">nutrition</span> <span class="o">=</span> <span class="kt">Nutrition</span><span class="p">()</span>
+<span class="n">nutrition</span><span class="o">.</span><span class="n">calories</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">food</span><span class="o">.</span><span class="n">nutrition</span> <span class="o">=</span> <span class="n">nutrition</span>
+<span class="n">foodPosition</span><span class="o">.</span><span class="n">foodCandidates</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
+<span class="n">foodPosition</span><span class="o">.</span><span class="n">userSelectedFood</span> <span class="o">=</span> <span class="n">foodPosition</span><span class="o">.</span><span class="n">foodCandidates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">mealData</span><span class="o">.</span><span class="nf">putFoodPosition</span><span class="p">(</span><span class="n">foodPosition</span><span class="p">)</span>
+
+<span class="kt">FoodLens</span><span class="o">.</span><span class="n">uiServiceMode</span> <span class="o">=</span> <span class="o">.</span><span class="n">userSelectedWithCandidates</span>
+
+<span class="k">let</span> <span class="nv">uiService</span> <span class="o">=</span> <span class="kt">FoodLens</span><span class="o">.</span><span class="nf">createUIService</span><span class="p">(</span><span class="nv">accessToken</span><span class="p">:</span> <span class="s">"31ae11f871ed4b2f89b18528f989af76"</span><span class="p">)</span> <span class="c1">//AccessToken is given to you</span>
+<span class="n">uiService</span><span class="o">.</span><span class="nf">startEditUIService</span><span class="p">(</span><span class="n">mealData</span><span class="p">,</span> <span class="nv">parent</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt">CallbackObject</span><span class="p">())</span>    
+</code></pre>
+
+<p>A completionHandler is protocol called when recognition process is completed</p>
+<h2 id='using-only-network-api' class='heading'>Using Only Network API</h2>
+
+<p>Of cource you can use only network API like this.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">networkService</span> <span class="o">=</span> <span class="kt">FoodLens</span><span class="o">.</span><span class="nf">createNetworkService</span><span class="p">(</span><span class="nv">nutritionRetrieveMode</span><span class="p">:</span> <span class="o">.</span><span class="n">allNutirition</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="s">"31ae11f871ed4b2f89b18528f989af76"</span><span class="p">)</span> <span class="c1">//AccessToken is given to you</span>
+<span class="n">networkService</span><span class="o">!.</span><span class="nf">predictMultipleFood</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="n">pickedImage</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="nv">result</span> <span class="p">:</span> <span class="kt">PredictionResult</span><span class="p">?,</span> <span class="nv">status</span> <span class="p">:</span> <span class="kt">ProcessStatus</span><span class="p">)</span> <span class="k">in</span>
+
+<span class="p">}</span>
+</code></pre>
+
+<p>PredictionResult is the object that implements RecognitionResult protocol</p>
+<h2 id='documents' class='heading'>Documents</h2>
+
+<p><a href="https://doinglab.github.io/ios/index.html">API Documents</a></p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p><a href="mailto:hyunsuk.lee@doinglab.com">hyunsuk.lee@doinglab.com</a>, <a href="mailto:leeint@gmail.com">leeint@gmail.com</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>FoodLens is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-04-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
