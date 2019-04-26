@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NetworkService Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/NetworkService" class="dashAnchor"></a>
+    <a title="NetworkService Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FoodLens Docs</a> (93% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FoodLens Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        NetworkService Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseError.html">BaseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Box.html">Box</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Food.html">Food</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoodLens.html">FoodLens</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoodPosition.html">FoodPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkService.html">NetworkService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Nutrition.html">Nutrition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PredictionResult.html">PredictionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProcessStatus.html">ProcessStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UIService.html">UIService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MealType.html">MealType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NutritionRetrieveMode.html">NutritionRetrieveMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProcessReason.html">ProcessReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProcessState.html">ProcessState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UIServiceMode.html">UIServiceMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RecognitionResult.html">RecognitionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserServiceResultHandler.html">UserServiceResultHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>NetworkService</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">NetworkService</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8FoodLens14NetworkServiceC015predictMultipleA05image10completionySo7UIImageC_yAA16PredictionResultCSg_AA13ProcessStatusCtctF"></a>
+                    <a name="//apple_ref/swift/Method/predictMultipleFood(image:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLens14NetworkServiceC015predictMultipleA05image10completionySo7UIImageC_yAA16PredictionResultCSg_AA13ProcessStatusCtctF">predictMultipleFood(image:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Predict multiple foods from UIImage. UIImage should contain food image.</p>
+
+<p>&mdash;- NOTE &mdash;-
+Prediction method does not support multi thread environment.
+DO NOT DUPLICATE CALL until previous call will be returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">predictMultipleFood</span><span class="p">(</span><span class="nv">image</span> <span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/PredictionResult.html">PredictionResult</a></span><span class="p">?,</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span><span class="kt"><a href="../Classes/ProcessStatus.html">ProcessStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage which contains food image. If Image size is not big enough, prediction result can be worse than big image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback method to get a prediction result.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>None</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8FoodLens14NetworkServiceC013predictSingleA05image10completionySo7UIImageC_yAA16PredictionResultCSg_AA13ProcessStatusCtctF"></a>
+                    <a name="//apple_ref/swift/Method/predictSingleFood(image:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLens14NetworkServiceC013predictSingleA05image10completionySo7UIImageC_yAA16PredictionResultCSg_AA13ProcessStatusCtctF">predictSingleFood(image:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Predict single food from UIImage. Byte array should contain food image.</p>
+
+<p>&mdash;- NOTE &mdash;-
+Prediction method does not support multi thread environment.
+DO NOT DUPLICATE CALL until previous call will be returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">predictSingleFood</span><span class="p">(</span><span class="nv">image</span> <span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/PredictionResult.html">PredictionResult</a></span><span class="p">?,</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span><span class="kt"><a href="../Classes/ProcessStatus.html">ProcessStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage which contains food image. If Image size is not big enough, prediction result can be worse than big image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback method to get a prediction result.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>None</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8FoodLens14NetworkServiceC16getNutritionInfo6foodId10completionySi_yAA0F0CSg_AA13ProcessStatusCtctF"></a>
+                    <a name="//apple_ref/swift/Method/getNutritionInfo(foodId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLens14NetworkServiceC16getNutritionInfo6foodId10completionySi_yAA0F0CSg_AA13ProcessStatusCtctF">getNutritionInfo(foodId:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get nutritional information of specified food id</p>
+
+<p>&mdash;- NOTE &mdash;-
+Prediction method does not support multi thread environment.
+DO NOT DUPLICATE CALL until previous call will be returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNutritionInfo</span><span class="p">(</span><span class="nv">foodId</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">nutrition</span><span class="p">:</span> <span class="kt"><a href="../Classes/Nutrition.html">Nutrition</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">status</span><span class="p">:</span><span class="kt"><a href="../Classes/ProcessStatus.html">ProcessStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>foodId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique id of food</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback method to get a nutritional result.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>None</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-04-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
