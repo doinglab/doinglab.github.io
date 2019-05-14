@@ -37,6 +37,9 @@
                 <a href="../Classes/Box.html">Box</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ButtonTheme.html">ButtonTheme</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/Food.html">Food</a>
               </li>
               <li class="nav-group-task">
@@ -44,6 +47,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/FoodPosition.html">FoodPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NavigationBarTheme.html">NavigationBarTheme</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/NetworkService.html">NetworkService</a>
@@ -56,6 +62,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ProcessStatus.html">ProcessStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ToolBarButtonTheme.html">ToolBarButtonTheme</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/UIService.html">UIService</a>
@@ -227,6 +236,104 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:8FoodLensAAC15createUIService11accessToken18navigationBarTheme07toolbarI006buttonI0012widgetButtonI0AA0D0CSS_AA010NavigationhI0CAA04ToolhmI0CAA0mI0CAPtFZ"></a>
+                    <a name="//apple_ref/swift/Method/createUIService(accessToken:navigationBarTheme:toolbarTheme:buttonTheme:widgetButtonTheme:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLensAAC15createUIService11accessToken18navigationBarTheme07toolbarI006buttonI0012widgetButtonI0AA0D0CSS_AA010NavigationhI0CAA04ToolhmI0CAA0mI0CAPtFZ">createUIService(accessToken:navigationBarTheme:toolbarTheme:buttonTheme:widgetButtonTheme:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start network services, when you use only network library, call the function below</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createUIService</span><span class="p">(</span><span class="nv">accessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">navigationBarTheme</span> <span class="nv">navTheme</span><span class="p">:</span> <span class="kt"><a href="../Classes/NavigationBarTheme.html">NavigationBarTheme</a></span><span class="p">,</span> <span class="n">toolbarTheme</span> <span class="nv">toolTheme</span><span class="p">:</span> <span class="kt"><a href="../Classes/ToolBarButtonTheme.html">ToolBarButtonTheme</a></span><span class="p">,</span> <span class="n">buttonTheme</span> <span class="nv">btnTheme</span><span class="p">:</span> <span class="kt"><a href="../Classes/ButtonTheme.html">ButtonTheme</a></span><span class="p">,</span> <span class="nv">widgetButtonTheme</span><span class="p">:</span> <span class="kt"><a href="../Classes/ButtonTheme.html">ButtonTheme</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UIService.html">UIService</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>accessToken that you receive</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>navigationBarTheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>theme of navigation bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toolbarTheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>theme of toolbar (bottom side of view)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buttonTheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>theme of food add and delete buttons, only &lsquo;textColor&rsquo; is valid</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>widgetButtonTheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>theme of buttons in amount input view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>UIService object that helps you use our recognition system UI</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:8FoodLensAAC13uiServiceModeAA09UIServiceE0OvpZ"></a>
                     <a name="//apple_ref/swift/Variable/uiServiceMode" class="dashAnchor"></a>
                     <a class="token" href="#/s:8FoodLensAAC13uiServiceModeAA09UIServiceE0OvpZ">uiServiceMode</a>
@@ -256,7 +363,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-04-03)</p>
+          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-05-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

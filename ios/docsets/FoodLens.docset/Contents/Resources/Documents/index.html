@@ -36,6 +36,9 @@
                 <a href="Classes/Box.html">Box</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/ButtonTheme.html">ButtonTheme</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/Food.html">Food</a>
               </li>
               <li class="nav-group-task">
@@ -43,6 +46,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/FoodPosition.html">FoodPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NavigationBarTheme.html">NavigationBarTheme</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/NetworkService.html">NetworkService</a>
@@ -55,6 +61,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ProcessStatus.html">ProcessStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ToolBarButtonTheme.html">ToolBarButtonTheme</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/UIService.html">UIService</a>
@@ -169,6 +178,17 @@
 </code></pre>
 
 <p>A completionHandler is protocol called when recognition process is completed</p>
+
+<p>You can also apply custom theme using like below</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">navTheme</span> <span class="o">=</span> <span class="kt">NavigationBarTheme</span><span class="p">(</span><span class="nv">foregroundColor</span> <span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="nv">backgroundColor</span> <span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">toolbarTheme</span> <span class="o">=</span> <span class="kt">ToolBarButtonTheme</span><span class="p">(</span><span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="nv">buttonTheme</span><span class="p">:</span> <span class="kt">ButtonTheme</span><span class="p">(</span><span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">textColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">clear</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">buttonTheme</span> <span class="o">=</span> <span class="kt">ButtonTheme</span><span class="p">(</span><span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">blue</span><span class="p">,</span> <span class="nv">textColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">green</span><span class="p">,</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">widgetButtonTheme</span> <span class="o">=</span> <span class="kt">ButtonTheme</span><span class="p">(</span><span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">textColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">blue</span><span class="p">,</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">red</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">uiService</span> <span class="o">=</span> <span class="kt">FoodLens</span><span class="o">.</span><span class="nf">createUIService</span><span class="p">(</span><span class="nv">accessToken</span><span class="p">:</span>  <span class="s">"d936638046c611e9b4750800200c9a66"</span><span class="p">,</span> <span class="nv">navigationBarTheme</span><span class="p">:</span> <span class="n">navTheme</span><span class="p">,</span> <span class="nv">toolbarTheme</span><span class="p">:</span> <span class="n">toolbarTheme</span><span class="p">,</span> <span class="nv">buttonTheme</span><span class="p">:</span> <span class="n">buttonTheme</span><span class="p">,</span>  <span class="nv">widgetButtonTheme</span> <span class="p">:</span> <span class="n">widgetButtonTheme</span><span class="p">)</span>
+<span class="kt">FoodLens</span><span class="o">.</span><span class="n">uiServiceMode</span> <span class="o">=</span> <span class="o">.</span><span class="n">userSelectedWithCandidates</span>
+<span class="n">uiService</span><span class="o">.</span><span class="nf">startUIService</span><span class="p">(</span><span class="nv">parent</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt">CallbackObject</span><span class="p">())</span>   
+</code></pre>
 <h2 id='using-only-network-api' class='heading'>Using Only Network API</h2>
 
 <p>Of cource you can use only network API like this.</p>
@@ -184,7 +204,7 @@
 <p><a href="https://doinglab.github.io/ios/index.html">API Documents</a></p>
 <h2 id='author' class='heading'>Author</h2>
 
-<p><a href="mailto:hyunsuk.lee@doinglab.com">hyunsuk.lee@doinglab.com</a>, <a href="mailto:leeint@gmail.com">leeint@gmail.com</a></p>
+<p><a href="mailto:hyunsuk.lee@doinglab.com">hyunsuk.lee@doinglab.com</a></p>
 <h2 id='license' class='heading'>License</h2>
 
 <p>FoodLens is available under the MIT license. See the LICENSE file for more info.</p>
@@ -192,7 +212,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-04-03)</p>
+          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-05-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
