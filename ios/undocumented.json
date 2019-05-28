@@ -1,29 +1,22 @@
 {
   "warnings": [
     {
-      "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/FoodLens.swift",
-      "line": 155,
-      "symbol": "FoodLens.uiServiceMode",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/Food.swift",
-      "line": 34,
+      "line": 36,
       "symbol": "Food.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/FoodPosition.swift",
-      "line": 40,
+      "line": 42,
       "symbol": "FoodPosition.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/FoodPosition.swift",
-      "line": 42,
+      "line": 44,
       "symbol": "FoodPosition.init(origin:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -37,7 +30,7 @@
     },
     {
       "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
-      "line": 110,
+      "line": 115,
       "symbol": "PredictionResult.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
