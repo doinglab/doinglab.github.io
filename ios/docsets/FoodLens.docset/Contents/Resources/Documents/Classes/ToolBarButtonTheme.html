@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NutritionRetrieveMode Enumeration Reference</title>
+    <title>ToolBarButtonTheme Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/NutritionRetrieveMode" class="dashAnchor"></a>
-    <a title="NutritionRetrieveMode Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Class/ToolBarButtonTheme" class="dashAnchor"></a>
+    <a title="ToolBarButtonTheme Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">FoodLens Docs</a> (93% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">FoodLens Reference</a>
         <img id="carat" src="../img/carat.png" />
-        NutritionRetrieveMode Enumeration Reference
+        ToolBarButtonTheme Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -107,14 +107,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>NutritionRetrieveMode</h1>
+            <h1>ToolBarButtonTheme</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NutritionRetrieveMode</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ToolBarButtonTheme</span></code></pre>
 
                 </div>
               </div>
-            <p>Set amount of nutritional data to receive</p>
+            <p>Object which is used for defining theme of bottom side</p>
 
           </section>
           <section class="section task-group-section">
@@ -123,9 +123,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8FoodLens21NutritionRetrieveModeO02noC0yA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/noNutrition" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8FoodLens21NutritionRetrieveModeO02noC0yA2CmF">noNutrition</a>
+                    <a name="/s:8FoodLens18ToolBarButtonThemeCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLens18ToolBarButtonThemeCACycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -133,14 +133,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Don&rsquo;t return any nutrition data</p>
+                        <p>Default constructor, the themes of background color and button are defined as default</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noNutrition</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -150,9 +150,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8FoodLens21NutritionRetrieveModeO04top1C4OnlyyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/top1NutritionOnly" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8FoodLens21NutritionRetrieveModeO04top1C4OnlyyA2CmF">top1NutritionOnly</a>
+                    <a name="/s:8FoodLens18ToolBarButtonThemeC15backgroundColor06buttonF0ACSo7UIColorC_AA0eF0Ctcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(backgroundColor:buttonTheme:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLens18ToolBarButtonThemeC15backgroundColor06buttonF0ACSo7UIColorC_AA0eF0Ctcfc">init(backgroundColor:buttonTheme:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -160,43 +160,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Return nutrition of only top1 candidate of each box</p>
+                        <p>Constructor, background color and buttonTheme are defined</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">top1NutritionOnly</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">buttonTheme</span><span class="p">:</span> <span class="kt"><a href="../Classes/ButtonTheme.html">ButtonTheme</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8FoodLens21NutritionRetrieveModeO13allNutiritionyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/allNutirition" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8FoodLens21NutritionRetrieveModeO13allNutiritionyA2CmF">allNutirition</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return nutrition of whole candidate</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">allNutirition</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backgroundColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>color of background</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buttonTheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>theme of button</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
