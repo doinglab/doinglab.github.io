@@ -14,7 +14,7 @@
     <a title="FoodLens Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">FoodLens Docs</a> (93% documented)</p>
+        <p><a href="../index.html">FoodLens Docs</a> (94% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -317,7 +317,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>theme of buttons in amount input view</p>
+                                  <p>theme of buttons in amount input view (see Other Results button and manual input)</p>
                                 </div>
                               </td>
                             </tr>
@@ -344,7 +344,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Set service mode of UI, see UIServiceMode</p>
 
                       </div>
                       <div class="declaration">
@@ -358,12 +358,96 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8FoodLensAAC15isSaveToGallerySbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/isSaveToGallery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLensAAC15isSaveToGallerySbvpZ">isSaveToGallery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set Photo saving mode, if it is true, taken photo will be saved to the gallery, otherwise, it won&rsquo;t be</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isSaveToGallery</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8FoodLensAAC7eatDate10Foundation0D0VSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/eatDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLensAAC7eatDate10Foundation0D0VSgvpZ">eatDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set date of eating, if it is not nil, it will be returned as RecognitionResult.getDate() which is the parameter of UserServiceResultHandler.onSuccess
+otherwise, current date will be returned</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">eatDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8FoodLensAAC7eatTypeAA04MealD0OSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/eatType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8FoodLensAAC7eatTypeAA04MealD0OSgvpZ">eatType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set type of eating, see MealType
+if it is not nil, it will be returned as RecognitionResult.getMealType() which is the parameter of UserServiceResultHandler.onSuccess
+otherwise, self-calculated value will be returned</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">eatType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MealType.html">MealType</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-05-14)</p>
+          <p>&copy; 2019 <a class="link" href="http://www.doinglab.com" target="_blank" rel="external">hyunsuk.lee@doinglab.com</a>. All rights reserved. (Last updated: 2019-05-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
