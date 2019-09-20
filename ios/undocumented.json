@@ -9,14 +9,14 @@
     },
     {
       "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
-      "line": 116,
+      "line": 124,
       "symbol": "PredictionResult.setValue(_:forKey:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
-      "line": 160,
+      "line": 168,
       "symbol": "PredictionResult.create(json:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
