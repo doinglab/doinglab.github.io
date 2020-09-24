@@ -1,33 +1,124 @@
 {
   "warnings": [
     {
-      "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/FoodPosition.swift",
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Network/FoodPosition.swift",
       "line": 48,
       "symbol": "FoodPosition.init(origin:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Network/HttpHelper.swift",
+      "line": 249,
+      "symbol": "FoodSearchResult",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Network/HttpHelper.swift",
+      "line": 252,
+      "symbol": "FoodSearchList",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
       "line": 124,
       "symbol": "PredictionResult.setValue(_:forKey:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
       "line": 168,
       "symbol": "PredictionResult.create(json:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/hwangchunlee/foodlenssdk_ios/FoodLens/Classes/NetworkService.swift",
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Network/PredictionResult.swift",
+      "line": 197,
+      "symbol": "PredictionResult.setEatTypeByDate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/NetworkService.swift",
       "line": 44,
       "symbol": "NetworkService",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 14,
+      "symbol": "MealType.breakfast",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 15,
+      "symbol": "MealType.lunch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 16,
+      "symbol": "MealType.dinner",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 17,
+      "symbol": "MealType.snack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 18,
+      "symbol": "MealType.morning_snack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 19,
+      "symbol": "MealType.afternoon_snack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/Definitions.swift",
+      "line": 20,
+      "symbol": "MealType.late_night_snack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/ToastView.swift",
+      "line": 10,
+      "symbol": "ToastView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/ToastView.swift",
+      "line": 49,
+      "symbol": "ToastView.short(_:txt_msg:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios/FoodLens/Classes/Utils/ToastView.swift",
+      "line": 70,
+      "symbol": "ToastView.long(_:txt_msg:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/hwangchunlee/foodlenssdk_ios"
+  "source_directory": "/Users/leeint/Documents/source/sdk/foodlenssdk_ios"
 }
