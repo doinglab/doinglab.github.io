@@ -1,10 +1,10 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:com.doinglab.foodlens2.sdk.config////PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.config/FoodLensLocaleConfig.ENGLISH///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-food-lens-locale-config/-e-n-g-l-i-s-h/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.config/FoodLensLocaleConfig.KOREA///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-food-lens-locale-config/-k-o-r-e-a/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.config/FoodLensLocaleConfig///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-food-lens-locale-config/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.config/FoodLensLocaleConfig/getLaunuage/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-food-lens-locale-config/get-launuage.html
+$dokka.location:com.doinglab.foodlens2.sdk.config/LanguageConfig.EN///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-language-config/-e-n/index.html
+$dokka.location:com.doinglab.foodlens2.sdk.config/LanguageConfig.KO///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-language-config/-k-o/index.html
+$dokka.location:com.doinglab.foodlens2.sdk.config/LanguageConfig///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-language-config/index.html
+$dokka.location:com.doinglab.foodlens2.sdk.config/LanguageConfig/getLaunuage/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-language-config/get-launuage.html
 $dokka.location:com.doinglab.foodlens2.sdk.errors////PointingToDeclaration/library/com.doinglab.foodlens2.sdk.errors/index.html
 $dokka.location:com.doinglab.foodlens2.sdk.errors/BadRequestError///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.errors/-bad-request-error/index.html
 $dokka.location:com.doinglab.foodlens2.sdk.errors/BadRequestError/BadRequestError/#kotlin.String?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.errors/-bad-request-error/-bad-request-error.html
@@ -32,18 +32,8 @@ $dokka.location:com.doinglab.foodlens2.sdk.errors/ServerNotWokError/ServerNotWok
 $dokka.location:com.doinglab.foodlens2.sdk.errors/SettingError///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.errors/-setting-error/index.html
 $dokka.location:com.doinglab.foodlens2.sdk.errors/SettingError/SettingError/#kotlin.String?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.errors/-setting-error/-setting-error.html
 $dokka.location:com.doinglab.foodlens2.sdk.model////PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/Box/#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/-box.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/getXmax/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/get-xmax.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/getXmin/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/get-xmin.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/getYmax/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/get-ymax.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/getYmin/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/get-ymin.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/setXmax/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/set-xmax.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/setXmin/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/set-xmin.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/setYmax/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/set-ymax.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/Box/setYmin/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-box/set-ymin.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/index.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/FoodInfo/#kotlin.String?#kotlin.String?#kotlin.collections.List[kotlin.String]?#com.doinglab.foodlens2.sdk.model.Box?#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/-food-info.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/FoodInfo/#kotlin.String?#kotlin.String?#kotlin.collections.List[kotlin.String]?#com.doinglab.foodlens2.sdk.model.FoodPosition?#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/-food-info.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/getCalcium/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/get-calcium.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/getCarbohydrate/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/get-carbohydrate.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/getCholesterol/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/get-cholesterol.html
@@ -74,7 +64,7 @@ $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setEnergy/#kotlin.Doub
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setEnergyFruit/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-energy-fruit.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setEnergyVegetable/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-energy-vegetable.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setFat/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-fat.html
-$dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setFoodPosition/#com.doinglab.foodlens2.sdk.model.Box?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-food-position.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setFoodPosition/#com.doinglab.foodlens2.sdk.model.FoodPosition?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-food-position.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setFullName/#kotlin.String?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-full-name.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setGram/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-gram.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setIngredientName/#kotlin.collections.List[kotlin.String]?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-ingredient-name.html
@@ -90,6 +80,16 @@ $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setTotalDietaryFiber/#
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setTotalSugars/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-total-sugars.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setTransFattyAcid/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-trans-fatty-acid.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/FoodInfo/setVitaminD/#kotlin.Double/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-info/set-vitamin-d.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/index.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/FoodPosition/#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/-food-position.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/getXmax/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/get-xmax.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/getXmin/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/get-xmin.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/getYmax/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/get-ymax.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/getYmin/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/get-ymin.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/setXmax/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/set-xmax.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/setXmin/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/set-xmin.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/setYmax/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/set-ymax.html
+$dokka.location:com.doinglab.foodlens2.sdk.model/FoodPosition/setYmin/#kotlin.Int/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-food-position/set-ymin.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/RecognitionResult///PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-recognition-result/index.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/RecognitionResult/RecognitionResult/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-recognition-result/-recognition-result.html
 $dokka.location:com.doinglab.foodlens2.sdk.model/RecognitionResult/getFoodInfoList/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.model/-recognition-result/get-food-info-list.html
@@ -101,14 +101,15 @@ $dokka.location:com.doinglab.foodlens2.sdk/FoodLens/createFoodLensService/#andro
 $dokka.location:com.doinglab.foodlens2.sdk/FoodLensService///PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/index.html
 $dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/getAutoRotate/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/get-auto-rotate.html
 $dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/getLanguage/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/get-language.html
-$dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/predict/#kotlin.ByteArray?#com.doinglab.foodlens2.sdk.RecognitionResultHandler?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/predict.html
+$dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/predict/#kotlin.ByteArray?#com.doinglab.foodlens2.sdk.RecognitionResultHandler/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/predict.html
+$dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/predict/#kotlin.ByteArray?#kotlin.String?#com.doinglab.foodlens2.sdk.RecognitionResultHandler?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/predict.html
 $dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/setAutoRotate/#kotlin.Boolean/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/set-auto-rotate.html
-$dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/setLanguage/#com.doinglab.foodlens2.sdk.config.FoodLensLocaleConfig/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/set-language.html
+$dokka.location:com.doinglab.foodlens2.sdk/FoodLensService/setLanguage/#com.doinglab.foodlens2.sdk.config.LanguageConfig/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-food-lens-service/set-language.html
 $dokka.location:com.doinglab.foodlens2.sdk/RecognitionResultHandler///PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-recognition-result-handler/index.html
 $dokka.location:com.doinglab.foodlens2.sdk/RecognitionResultHandler/onError/#com.doinglab.foodlens2.sdk.errors.BaseError?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-recognition-result-handler/on-error.html
 $dokka.location:com.doinglab.foodlens2.sdk/RecognitionResultHandler/onSuccess/#com.doinglab.foodlens2.sdk.model.RecognitionResult?/PointingToDeclaration/library/com.doinglab.foodlens2.sdk/-recognition-result-handler/on-success.html
-$dokka.location:kotlin/FoodLensLocaleConfig/getName/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-food-lens-locale-config/get-name.html
-$dokka.location:kotlin/FoodLensLocaleConfig/getOrdinal/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-food-lens-locale-config/get-ordinal.html
+$dokka.location:kotlin/LanguageConfig/getName/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-language-config/get-name.html
+$dokka.location:kotlin/LanguageConfig/getOrdinal/#/PointingToDeclaration/library/com.doinglab.foodlens2.sdk.config/-language-config/get-ordinal.html
 com.doinglab.foodlens2.sdk
 com.doinglab.foodlens2.sdk.config
 com.doinglab.foodlens2.sdk.errors
