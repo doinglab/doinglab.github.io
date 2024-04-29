@@ -1,0 +1,12 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:core
+com.doinglab.foodlens.sdk.core
+com.doinglab.foodlens.sdk.core.error
+com.doinglab.foodlens.sdk.core.model
+com.doinglab.foodlens.sdk.core.model.result
+com.doinglab.foodlens.sdk.core.type
+module:ui
+com.doinglab.foodlens.sdk.ui
+com.doinglab.foodlens.sdk.ui.config
